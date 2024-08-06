@@ -29,6 +29,7 @@
         padding: 15px;
         border-radius: 25px;
       }
+
       /* The heart of the matter */
 
       .horizontal-scrollable > .row {
@@ -54,6 +55,11 @@
         width: 125px;
         height: 125px;
         border-radius: 25px;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+      }
+      .col-xs-1:hover {
+        transform: translateY(-10px);
       }
 
       /* On small screens, set height to 'auto' for sidenav and grid */
@@ -78,19 +84,19 @@
         <div class="row content">
           <div class="col-md-5">
             <div class="media">
-              <div class="media-center icon">
+              <div class="media-center">
                 <img
                   src="Images/pfp.png"
                   class="media-object media-center"
                   id="main-image"
-                  style="border-radius: 15%; width: inherit"
+                  style="border-radius: 15%; max-width: 460px"
                 />
               </div>
             </div>
           </div>
 
           <div class="col-sm-7">
-            <h1 class="text-center main-title">Voscal</h1>
+            <h1 id="main-title" class="text-center main-title">Voscal</h1>
             <div id="main-text"></div>
           </div>
         </div>
