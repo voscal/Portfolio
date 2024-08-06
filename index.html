@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Voscal</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+      .row.content {
+        height: 15px;
+      }
+
+      /* Set gray background color and 100% height */
+      .sidenav {
+        height: 100%;
+      }
+
+      /* Set black background color, white text and some padding */
+      footer {
+        background-color: #ebebeb;
+        color: white;
+        padding: 15px;
+        border-radius: 25px;
+      }
+      /* The heart of the matter */
+
+      .horizontal-scrollable > .row {
+        overflow: auto;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        white-space: nowrap;
+      }
+
+      .horizontal-scrollable > .row > .col-xs-1 {
+        display: inline-block;
+        float: none;
+      }
+      /* Decorations */
+
+      .col-xs-1 {
+        background-color: rgb(213, 213, 213);
+        color: white;
+        font-size: 24px;
+        padding: 0px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 125px;
+        height: 125px;
+        border-radius: 25px;
+      }
+
+      /* On small screens, set height to 'auto' for sidenav and grid */
+      @media screen and (max-width: 767px) {
+        .sidenav {
+          height: auto;
+          padding: 15px;
+        }
+        .row.content {
+          height: auto;
+        }
+        .icon {
+          width: 50px;
+          margin-bottom: -30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="d-flex align-items-center" style="min-height: 100vh">
+      <div class="container">
+        <div class="row content">
+          <div class="col-md-5">
+            <div class="media">
+              <div class="media-center icon">
+                <img
+                  src="Images/pfp.png"
+                  class="media-object media-center"
+                  id="main-image"
+                  style="border-radius: 15%; width: inherit"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-7">
+            <h1 class="text-center main-title">Voscal</h1>
+            <div id="main-text"></div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="container" style="margin-top: 20px">
+        <div class="horizontal-scrollable">
+          <div class="row text-center ProjectButtons"></div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="main.js"></script>
+
+  <input type="image" class="col-xs-1" src="Images/pfp.png" alt="Links" />
+</html>
