@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } catch (error) {
       console.error("Error loading projects:", error);
     }
+    loadProject(project)
   };
 
   // Function to load a specific project
